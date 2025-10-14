@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flow Discharge</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<style>
+			img {
+			  float: left;
+			  border: 1px dotted black;
+			  margin: 15px 15px 15px 15px;
+			}
+			
+			img.a {
+              vertical-align: middle;
+            }
+		
+     		p.clear {
+              clear: left;
+            }
+			
+		    body {
+		      background-color: rgb(237,232,208);
+		    }
+			
+			.container {
+			  display: flex;
+			  align-items: center;
+			  justify-content: center
+			  float: left;
+			}
+
+			.text {
+			  padding-left: 20px;
+			  float: left;
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+	
+		<h2>Flow discharge radar system</h2>
+
+		<p>The flow discharge radar system comprises of two radars.  The first radar measures the velocity of the 
+		   surface river flow and the second radar measures the vertical height of the fixed radar from the river.
+		</p>
+		
+		<p>The river discharge or volume flow rate in m3/second is calculated from the cross-sectional area of the 
+		   river together with the river surface velocity and the vertical height of the river surface from the radar.
+		</p>
+		
+		<p>The surface velocity measuring radar works on the doppler phenomenon whereby an electromagnetic wave (EM) 
+		   of 24 GHz is transmitted and reflected from the flowing river. Due to doppler effect the reflected EM is 
+		   at a slightly different frequency which is proportional to the river velocity. The received EM is compared 
+		   with the transmitted EM and the river surface velocity is calculated.
+		</p>
+		
+		<div class="container">
+		  <div class="image">
+			<img src="riverVelocity.jpg" width="265" height="190">
+		  </div>
+		  <div class="text">
+			<p><i>An illustration of river surface velocity measurement setup from side view, the observation area 
+	       (marked in yellow) depends on the height of radar and the beam width in elevation, theta (elevation)</i></p>
+		  </div>
+        </div>
+		
+	    <p class="clear">The level radar works on 60 GHz and uses Frequency Modulated Continuous Wave (FMCW) concept. 
+		   It measures the height of the radar from the water surface.
+		</p>
+		
+		<div class="container">
+		  <div class="image">
+			<img src="levelHeight.jpg" width="265" height="190">
+		  </div>
+		  <div class="text">
+			<p><i>An illustration of  level setup with the river flowing into the page</i></p>
+		  </div>
+        </div>
+		
+		<p class="clear">The combined radar system is able to calculate volume flow rate of the river or can be used as an early 
+		   warning flood radar. During a flood, first the surface velocity of the river increases and then after a
+		   period of time the water level in the river starts to rise. By having access to both the surface velocity 
+		   and surface level (vertical height) data, an early flood warning system can be devised.
+		</p>
+		
+		<div class="container">
+		  <div class="image">
+			<img src="riverCrossSection.jpg" width="265" height="190">
+		  </div>
+		  <div class="text">
+			<p><i>An illustration of  calculation of river discharge or volume flow rate per second</i></p>
+		  </div>
+        </div>
+		
+		<p class="clear">The flow discharge radar system is comprised of two radar systems 
+		<a href="https://precisionsensors.github.io/website/riverRadar.html">River Surface Velocity Radar</a> and 
+		<a href="https://precisionsensors.github.io/website/levelRadar.html">Level Radar</a>. Both radars are available either as seperate units or as a combined unit.
+		</p>
+		
+		<h2><a href="https://precisionsensors.github.io/website/index.html">Back to Homepage</a></h2>
+
+	</body>
+</html>
